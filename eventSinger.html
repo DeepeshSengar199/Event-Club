@@ -1,0 +1,162 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Event</title>
+
+    <style>
+        * {
+            margin: 0px;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        body{
+
+            background-color:rgb(178, 183, 252);
+
+        }
+
+        .navBar {
+            display: flex;
+            flex-wrap: wrap;
+            
+            font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;            
+            /* border: 2px solid black; */
+            background-color: rgba(70, 113, 253, 0.986);
+            justify-content:space-between ;
+            align-items: center;
+            padding:5px 15px;
+            border-radius: 20px;
+            margin-top: 25px;
+
+        }
+
+        .navItem{}
+
+        #logo {
+            cursor: pointer;
+            /* position: relative; */
+            
+            top: 10px;
+            font-weight: bold;
+            color: white;
+            padding: 0px 4px ;
+            border: 2px solid white
+            
+        }
+
+        .navBar li{
+            list-style: none;
+            /* border : 2px solid black; */
+            margin: 10x 10px;
+            display: inline;
+            padding: 15px;
+
+        }
+
+        .navBar li a  {
+            text-decoration: none;
+            
+            border-style: none;
+            color: white;
+
+        }
+
+
+        .searchItem {
+            font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;            
+            padding: 1px;
+            border-radius: 10px;
+            border-style: none;
+
+        }
+        .navButton button{
+            padding: 4px;
+            margin:  1px 10px;
+            border-style: none;
+            background-color: transparent;
+            color: white;
+            font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;            
+            
+        }
+
+.main{
+    display: flex;
+    justify-content:space-around ;
+    flex-wrap: wrap;
+    align-items:center;
+    margin:50px;
+    
+} 
+
+.main div{
+    width: 90vw;
+    height: auto;
+    margin: 4px;
+    display: inline-block;
+    background-color: rgb(102, 86, 248);
+    text-align: center;
+    color: white;
+    font-family:'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    border-top-left-radius :10px ;
+    
+    border-bottom-right-radius :10px ;
+}
+
+.main div:hover{
+    /* width: 220px; */
+    /* height: 200px; */
+    
+}
+
+.navItem li :hover{
+    color: blue;
+}
+.navBar   button:hover{
+    color: blue;
+}
+
+</style>
+
+
+
+</head>
+
+<body>
+    <!-- <h3 id="logo"> Event Club</h3> -->
+    
+    <nav class="navBar">
+        
+        <h3 id="logo"> Event Club</h3>
+        <ul class="navItem">
+            <li> <a href="#"> Home </a></li>
+            <li> <a href="#"> Upcoming Events </a></li>
+            <li> <a href="#"> About Us </a> </li>
+            <li > <input type="text" class="searchItem" placeholder="Search For Events"> </li>
+        </ul>
+        <div class="navButton">
+            <button>Sign Up</button>
+            <button>Login</button>
+        
+        </div>
+        
+    </nav>
+
+    <main class="main">
+       <div> 
+           <h3>Dance</h3>
+            <p>
+                Dancing is an art so enjoy it.
+            </p>
+        </div>
+       
+           <div> <h3>Singing</h3></div>
+       <div> <h3>Band</h3></div>
+       <div> <h3>Instrument</h3></div>
+    </main>
+</body>
+
+</html>
